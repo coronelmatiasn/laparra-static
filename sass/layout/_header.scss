@@ -1,0 +1,27 @@
+.main-header {
+    background-color: $color-primary;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 3px 18px rgba($color-grey-dark, .8);
+
+    .logo-box { // .main-header .logo-box
+        .logo {
+            width: 6.5rem;   
+        }
+    }
+
+    .main-navigation {
+        margin-left: auto;
+    }
+
+    .social-menu {
+        margin-left: 2.5rem;
+
+        @media (max-width: 830px) {
+            display: none;
+        }
+    }
+}

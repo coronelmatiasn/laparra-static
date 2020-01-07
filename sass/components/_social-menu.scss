@@ -1,0 +1,23 @@
+.social-menu {
+    &__icon {
+
+    }
+
+    &__link {
+        &:link,
+        &:visited,
+        &:active {
+            text-decoration: none;
+            color: $color-white;
+            
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+
+        &:focus,
+        &:hover {
+            opacity: .7;
+        }
+    }
+}

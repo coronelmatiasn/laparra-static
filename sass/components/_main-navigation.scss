@@ -1,0 +1,26 @@
+.main-navigation {
+    &__list { // .main-navigation__list
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited,
+        &:active {
+            text-decoration: none;
+            color: $color-white;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: .7;
+        }
+    }
+}

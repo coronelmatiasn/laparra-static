@@ -1,0 +1,17 @@
+{
+  "name": "laparra-v2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "sass --watch sass/main.scss assets/css/styles.css",
+    "sass": "sass sass/main.scss assets/css/styles.css",
+    "start": "live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "live-server": "^1.2.1"
+  }
+}

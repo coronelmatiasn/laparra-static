@@ -1,0 +1,23 @@
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Dosis', sans-serif;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $default-font-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dosis', sans-serif;
+}
+
+.main-navigation {
+    &__link {
+        letter-spacing: 1px;
+    }
+}
+
+.social-menu {
+    &__link {
+        font-size: 3rem;
+    }
+}

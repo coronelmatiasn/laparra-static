@@ -1,0 +1,90 @@
+/* FONTS VARIABLES */
+/* COLORS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.u-padding {
+  padding: 0 12rem;
+}
+@media (max-width: 1200px) {
+  .u-padding {
+    padding: 6rem;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Dosis", sans-serif;
+}
+
+.main-navigation__link {
+  letter-spacing: 1px;
+}
+
+.social-menu__link {
+  font-size: 3rem;
+}
+
+.main-navigation__list {
+  list-style: none;
+  display: flex;
+}
+.main-navigation__item:not(:last-child) {
+  margin-right: 2rem;
+}
+.main-navigation__link:link, .main-navigation__link:visited, .main-navigation__link:active {
+  text-decoration: none;
+  color: #fff;
+}
+.main-navigation__link:hover, .main-navigation__link:focus {
+  opacity: 0.7;
+}
+
+.social-menu__link:link, .social-menu__link:visited, .social-menu__link:active {
+  text-decoration: none;
+  color: #fff;
+}
+.social-menu__link:link:not(:last-child), .social-menu__link:visited:not(:last-child), .social-menu__link:active:not(:last-child) {
+  margin-right: 1rem;
+}
+.social-menu__link:focus, .social-menu__link:hover {
+  opacity: 0.7;
+}
+
+.main-header {
+  background-color: #a52300;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 2px 3px 18px rgba(68, 68, 68, 0.8);
+}
+.main-header .logo-box .logo {
+  width: 6.5rem;
+}
+.main-header .main-navigation {
+  margin-left: auto;
+}
+.main-header .social-menu {
+  margin-left: 2.5rem;
+}
+@media (max-width: 830px) {
+  .main-header .social-menu {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

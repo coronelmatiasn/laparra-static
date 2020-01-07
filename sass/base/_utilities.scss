@@ -1,0 +1,7 @@
+.u-padding {
+    padding: 0 12rem;
+
+    @media (max-width: 1200px) {
+        padding: 6rem;
+    }
+}
