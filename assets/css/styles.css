@@ -19,6 +19,11 @@ html {
     padding: 6rem;
   }
 }
+@media (max-width: 460px) {
+  .u-padding {
+    padding: 3rem;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -37,12 +42,89 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;
 }
 
+.main-navigation__checkbox {
+  display: none;
+}
+.main-navigation__button {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid #fff;
+  text-align: center;
+  display: none;
+}
+@media (max-width: 650px) {
+  .main-navigation__button {
+    display: block;
+  }
+}
+.main-navigation__icon {
+  position: relative;
+  margin-top: 2rem;
+}
+.main-navigation__icon, .main-navigation__icon::before, .main-navigation__icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: #fff;
+  display: inline-block;
+}
+.main-navigation__icon::before, .main-navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.main-navigation__icon::before {
+  top: -0.8rem;
+}
+.main-navigation__icon::after {
+  top: 0.8rem;
+}
+.main-navigation__checkbox:checked + .main-navigation__button .main-navigation__icon {
+  background: transparent;
+}
+.main-navigation__checkbox:checked + .main-navigation__button .main-navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.main-navigation__checkbox:checked + .main-navigation__button .main-navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+.main-navigation__checkbox:checked ~ .main-navigation__list {
+  visibility: visible;
+  opacity: 1;
+}
 .main-navigation__list {
   list-style: none;
   display: flex;
 }
+@media (max-width: 650px) {
+  .main-navigation__list {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    flex-direction: column;
+    background: #444444;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+}
 .main-navigation__item:not(:last-child) {
   margin-right: 2rem;
+}
+@media (max-width: 650px) {
+  .main-navigation__item {
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .main-navigation__item:not(:last-child) {
+    margin-right: 0;
+  }
 }
 .main-navigation__link:link, .main-navigation__link:visited, .main-navigation__link:active {
   text-decoration: none;
@@ -71,6 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   flex-wrap: wrap;
   box-shadow: 2px 3px 18px rgba(68, 68, 68, 0.8);
+  position: relative;
 }
 .main-header .logo-box .logo {
   width: 6.5rem;
