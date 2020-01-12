@@ -172,8 +172,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-banner {
   display: flex;
-  background-size: cover;
-  height: 600rem;
+  height: 65vh;
+  min-height: 30rem;
   padding-top: 2.5rem;
 }
 .main-banner__header {
