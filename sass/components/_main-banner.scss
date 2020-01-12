@@ -1,14 +1,14 @@
 .main-banner {
     display: flex;
-    height: 65vh;
+    height: 70vh;
     min-height: 30rem;
-    padding-top: 7vw;
-    padding-left: 10vw;
+    align-items: center; // center items vertically
+
     &__header {
-        font-size: 4vw;
-        color: white;
+        
     }
+    
     &__span{
-        font-size: 2vw;
+
     }
 }
