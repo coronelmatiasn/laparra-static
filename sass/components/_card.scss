@@ -1,0 +1,65 @@
+.card {
+    flex: 0 0 30%;
+    position: relative;
+    
+    @media (max-width: 980px) {
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 4rem;
+    }
+
+    &__img {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+    }
+
+    &__title {
+        background-color: $color-primary;
+        padding: 2.5rem 3rem;
+        width:fit-content;
+        text-transform: uppercase;
+        position: absolute;
+        top: 20rem;
+        right: -2rem;
+        max-width: 70%;
+        z-index: 100;
+    }
+
+    &__content {
+        padding: 5rem 0 2rem;
+    }
+
+    &__meta {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        margin-bottom: 2rem;
+    }
+
+    &__date {
+
+    }
+
+    &__author {
+
+    }
+
+    &__author-link {
+        &:link,
+        &:visited,
+        &:active {
+            text-decoration: none;
+        }
+
+        &:hover,
+        &:focus {
+            outline: none; 
+            text-decoration: underline;
+        }
+    }
+
+    &__text {
+        margin-bottom: 2.5rem;
+    }
+}

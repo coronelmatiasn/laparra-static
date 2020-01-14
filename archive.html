@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/vendors/fontawesome/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700|Open+Sans:300,400,400i,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header u-padding">
+        <div class="logo-box">
+            <a href="#" class="logo-link">
+                <img src="assets/images/laparra-white.png" alt="logo" class="logo">
+            </a>
+        </div>
+    
+        <nav class="main-navigation">
+            <input id="main-nav-checkbox" type="checkbox" class="main-navigation__checkbox">
+
+            <label for="main-nav-checkbox" class="main-navigation__button">
+                <span class="main-navigation__icon"></span>
+            </label>
+
+            <ul class="main-navigation__list">
+                <li class="main-navigation__item">
+                    <a href="#" class="main-navigation__link">Blog</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="#" class="main-navigation__link">Eventos</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="#" class="main-navigation__link">Talleres</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a href="#" class="main-navigation__link">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="social-menu">
+            <a href="#" class="social-menu__link">
+                <i class="fab fa-facebook-square social-menu__icon"></i>
+            </a>
+            <a href="#" class="social-menu__link">
+                <i class="fab fa-instagram social-menu__icon"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="banner u-padding" style="background-image: linear-gradient(to right, rgba(50, 50, 50, .6) 1%, rgba(50, 50, 50, .6) 100%), url('/assets/images/library.jpg'); background-position: center; background-size: cover;">
+        <h1 class="banner__header">El Blog de La Parra</h1>
+    </div>
+
+    <div class="options-bar u-margin">
+        <select class="options-bar__select" name="category">
+            <option value="" disabled selected hidden>Categoría</option>
+            <option value="todas">Todas</option>
+            <option value="musica">Música</option>
+            <option value="arte">Arte</option>
+            <option value="galeria">Galerías</option>
+            <option value="articulo">Artículos</option>
+        </select>
+
+        <select class="options-bar__select" name="order">
+            <option value="" disabled selected hidden>Ordenar Por</option>
+            <option value="">Alfabético (A-Z)</option>
+            <option value="">Alfabético (Z-A)</option>
+            <option value="">Fecha (Ascendente)</option>
+            <option value="">Fecha (Descendente)</option>
+        </select>
+    </div>
+
+    <div class="cards-container u-padding">
+        <div class="card">
+            <img class="card__img" src="/assets/images/img-1.jpg" alt="">
+            <h2 class="card__title">Muestra de Arte</h2>
+            <div class="card__content">
+                <div class="card__meta">
+                    <span class="card__date">25 de Enero, 2020</span>
+                    <span class="card__author">
+                        por <a href="#" class="card__author-link">Andreina</a>
+                    </span>
+                </div>
+                <p class="card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Proin imperdiet sapien purus, id scelerisque lorem laoreet 
+                    non. Ut commodo vitae mauris ac interdum.
+                </p>
+                <a href="#" class="link-button">Leer más <span class="link-button__arrows">&gt;&gt;</span></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card__img" src="/assets/images/img-1.jpg" alt="">
+            <h2 class="card__title">Muestra de Arte</h2>
+            <div class="card__content">
+                <div class="card__meta">
+                    <span class="card__date">25 de Enero, 2020</span>
+                    <span class="card__author">
+                        por <a href="#" class="card__author-link">Andreina</a>
+                    </span>
+                </div>
+                <p class="card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Proin imperdiet sapien purus, id scelerisque lorem laoreet 
+                    non. Ut commodo vitae mauris ac interdum.
+                </p>
+                <a href="#" class="link-button">Leer más <span class="link-button__arrows">&gt;&gt;</span></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card__img" src="/assets/images/img-1.jpg" alt="">
+            <h2 class="card__title">Muestra de Arte</h2>
+            <div class="card__content">
+                <div class="card__meta">
+                    <span class="card__date">25 de Enero, 2020</span>
+                    <span class="card__author">
+                        por <a href="#" class="card__author-link">Andreina</a>
+                    </span>
+                </div>
+                <p class="card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Proin imperdiet sapien purus, id scelerisque lorem laoreet 
+                    non. Ut commodo vitae mauris ac interdum.
+                </p>
+                <a href="#" class="link-button">Leer más <span class="link-button__arrows">&gt;&gt;</span></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

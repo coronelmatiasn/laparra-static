@@ -34,3 +34,45 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 3rem;
     }
 }
+
+.banner {
+    &__header {
+        color: $color-white;
+        font-size: 4rem;
+        font-weight: 400;
+        text-shadow: 2px 2px 3px rgba(20, 20, 20, .8);
+    }
+}
+
+.options-bar {
+    &__select {
+        font-family: 'Open Sans', sans-serif;
+        color: $color-grey-dark;
+        font-size: $default-font-size;
+    }
+}
+
+.card {
+    &__title {
+        color: $color-white;
+        font-weight: 300;
+        font-size: $preview-header-font-size;
+        letter-spacing: .2rem;
+    }
+
+    &__content {
+        color: $color-grey-dark;
+    }
+
+    &__meta {
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+
+    &__author-link:link,
+    &__author-link:visited,
+    &__author-link:active {
+        font-weight: 700;
+        color: $color-grey-dark;
+    }
+}
