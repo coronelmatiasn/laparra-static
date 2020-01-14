@@ -9,3 +9,15 @@
         padding: 3rem;
     }
 }
+
+.u-margin {
+    margin: 0 12rem;
+
+    @media (max-width: 1200px) {
+        margin: 6rem;
+    }
+
+    @media (max-width: 460px) {
+        margin: 3rem;
+    }
+}

@@ -1,0 +1,27 @@
+.pagination {
+    &__link {
+        &:link,
+        &:active,
+        &:visited {
+            color: $color-primary;
+            text-decoration: none;
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+        
+        &--back {
+            margin-right: 1.5rem;
+        }
+
+        &--fwd {
+            margin-left: 1.5rem;
+        }
+    }
+
+    &__link.pagination__link--active {
+        text-decoration: underline;
+    }
+}
