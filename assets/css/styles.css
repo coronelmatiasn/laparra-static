@@ -42,6 +42,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;
 }
 
+.main-banner__header {
+  color: white;
+  font-size: 5.5rem;
+  font-weight: 400;
+  letter-spacing: 0.8rem;
+}
+.main-banner__span {
+  font-size: 3rem;
+}
+
 .main-navigation__checkbox {
   display: none;
 }
@@ -168,6 +178,13 @@ h1, h2, h3, h4, h5, h6 {
   .main-header .social-menu {
     display: none;
   }
+}
+
+.main-banner {
+  display: flex;
+  height: 70vh;
+  min-height: 30rem;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

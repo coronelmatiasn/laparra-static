@@ -21,3 +21,16 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 3rem;
     }
 }
+
+.main-banner {
+    &__header {
+        color: white;
+        font-size: 5.5rem;
+        font-weight: 400;
+        letter-spacing: .8rem;
+    }
+
+    &__span {
+        font-size: 3rem;
+    }
+}
