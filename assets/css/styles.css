@@ -243,6 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 .card {
   flex: 0 0 30%;
   position: relative;
+  margin-bottom: 5rem;
 }
 @media (max-width: 980px) {
   .card {
@@ -304,6 +305,23 @@ h1, h2, h3, h4, h5, h6 {
 .link-button:hover .link-button__arrows, .link-button:focus .link-button__arrows {
   margin-left: 1.5rem;
   color: #fff;
+}
+
+.pagination__link:link, .pagination__link:active, .pagination__link:visited {
+  color: #a52300;
+  text-decoration: none;
+}
+.pagination__link:hover, .pagination__link:focus {
+  text-decoration: underline;
+}
+.pagination__link--back {
+  margin-right: 1.5rem;
+}
+.pagination__link--fwd {
+  margin-left: 1.5rem;
+}
+.pagination__link.pagination__link--active {
+  text-decoration: underline;
 }
 
 .main-header {
