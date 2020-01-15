@@ -1,0 +1,87 @@
+.main-footer {
+    background-color: $color-grey-light;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    &__container {
+        padding: 3rem 0;
+        display: flex;
+        border-top: 1px solid $color-white;
+
+        @media (max-width: 840px) {
+            flex-direction: column;
+        }
+    }
+
+    &__element {
+        &:not(:last-child) {
+            margin-right: 10rem;
+        
+            @media (max-width: 840px) {
+                margin-right: 0;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content.main-footer__content--horizontal {
+        flex-direction: row;
+    }
+
+    &__logo {
+        width: 2.5rem;
+        margin-right: 1.5rem;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__icon {
+        height: 9rem;
+        width: 9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        margin-right: 2rem;
+
+        &:link,
+        &:active,
+        &:visited {
+            color: $color-white;
+            text-decoration: none;
+        }
+
+        &--fb {
+            background-color: #4862a3;
+
+            &:hover,
+            &:focus {
+                background-color: #5a7aca;
+            }
+        }
+
+        &--ig {
+            background-color: #d8226b;
+
+            &:hover,
+            &:focus {
+                background-color: #f72c7d;
+            }
+        }
+    }
+}
