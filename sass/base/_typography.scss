@@ -76,3 +76,32 @@ h1, h2, h3, h4, h5, h6 {
         color: $color-grey-dark;
     }
 }
+
+.main-footer {
+    &__heading {
+        color: $color-white;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+    }
+
+    &__content {
+        color: $color-white;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        &:link,
+        &:active,
+        &:visited {
+            color: $color-white;
+            text-decoration: none;
+            font-weight: 300;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: .7;
+        }
+    }
+}
