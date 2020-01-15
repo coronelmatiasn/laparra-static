@@ -1,0 +1,55 @@
+.event-card {
+    flex: 0 0 30%;
+    margin-bottom: 3rem;
+
+    @media (max-width: 860px) {
+        flex: 0 0 47%;
+    }
+
+    @media (max-width: 600px) {
+        flex: 0 0 100%;
+    }
+
+    &__image-box {
+        height: 23rem;
+        position: relative;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__tag {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 1.5rem 3rem;
+        background-color: $color-grey-light;
+        color: $color-white;
+    }
+
+    &__info {
+        font-size: $default-font-size;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: $color-primary;
+        padding: 3.5rem;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: $preview-header-font-size;
+        color: $color-white;
+        flex: 1 0 100%;
+        margin-bottom: 6.5rem;
+    }
+
+    &__date {
+        color: $color-white;
+        font-weight: 300;
+    }
+}

@@ -46,7 +46,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,13 +81,13 @@ h1, h2, h3, h4, h5, h6 {
 .options-bar__select {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .card__title {
   color: #fff;
   font-weight: 300;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   letter-spacing: 0.2rem;
 }
 .card__content {
@@ -347,6 +347,73 @@ h1, h2, h3, h4, h5, h6 {
 }
 .pagination__link.pagination__link--active {
   text-decoration: underline;
+}
+
+.event-card {
+  flex: 0 0 30%;
+  margin-bottom: 3rem;
+}
+@media (max-width: 860px) {
+  .event-card {
+    flex: 0 0 47%;
+  }
+}
+@media (max-width: 600px) {
+  .event-card {
+    flex: 0 0 100%;
+  }
+}
+.event-card__image-box {
+  height: 23rem;
+  position: relative;
+}
+.event-card__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.event-card__tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem 3rem;
+  background-color: #898989;
+  color: #fff;
+}
+.event-card__info {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #a52300;
+  padding: 3.5rem;
+}
+.event-card__title {
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #fff;
+  flex: 1 0 100%;
+  margin-bottom: 6.5rem;
+}
+.event-card__date {
+  color: #fff;
+  font-weight: 300;
+}
+
+.square-button:link, .square-button:visited, .square-button:active {
+  text-decoration: none;
+  padding: 1.5rem 2.5rem;
+  transition: all 0.2s ease-out;
+}
+
+.square-button--invert:link, .square-button--invert:visited, .square-button--invert:active {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.square-button--invert:hover, .square-button--invert:focus {
+  color: #a52300;
+  background-color: #fff;
 }
 
 .main-header {

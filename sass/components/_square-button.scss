@@ -1,0 +1,24 @@
+.square-button {
+    &:link,
+    &:visited,
+    &:active {
+        text-decoration: none;
+        padding: 1.5rem 2.5rem;
+        transition: all .2s ease-out;
+    }
+}
+
+.square-button--invert {
+    &:link,
+    &:visited,
+    &:active {
+        color: $color-white;
+        border: 1px solid $color-white;
+    }
+
+    &:hover,
+    &:focus {
+        color: $color-primary;
+        background-color: $color-white;
+    }
+}
