@@ -27,7 +27,12 @@
     &__heading {
         display: flex;
         align-items: center;
-        margin-bottom: 2rem;
+        margin-bottom: 3.5rem;
+        position: relative;
+
+        h3 {
+            margin-left: 7rem;
+        }
     }
 
     &__content {
@@ -40,8 +45,10 @@
     }
 
     &__logo {
-        width: 2.5rem;
-        margin-right: 1.5rem;
+        width: 6rem;
+        position: absolute;
+        left: 0;
+        top: -2rem;
     }
 
     &__item {

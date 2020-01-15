@@ -10,6 +10,11 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 1025px) {
+  html {
+    font-size: 50%;
+  }
+}
 
 .u-padding {
   padding: 0 12rem;
@@ -225,6 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 30rem;
   align-items: center;
 }
+
 .banner {
   height: 40vh;
   display: flex;
@@ -395,7 +401,11 @@ h1, h2, h3, h4, h5, h6 {
 .main-footer__heading {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+.main-footer__heading h3 {
+  margin-left: 7rem;
 }
 .main-footer__content {
   display: flex;
@@ -405,8 +415,10 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
 }
 .main-footer__logo {
-  width: 2.5rem;
-  margin-right: 1.5rem;
+  width: 6rem;
+  position: absolute;
+  left: 0;
+  top: -2rem;
 }
 .main-footer__item:not(:last-child) {
   margin-bottom: 1.5rem;
