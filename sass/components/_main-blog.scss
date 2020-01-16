@@ -5,27 +5,13 @@
     &__graystrip {
         position: absolute;
         z-index: -1;
-        height: 42rem;
+        min-height: 36rem;
+        height: 55vh;
         width: 100%;
         background-color: #444444;
-    }
-
-    &__header {
-        text-align: center;
-        margin-top: 8vh;
-        color: whitesmoke;
-        letter-spacing: 3px;
-    }
-
-    &__paragraph {
-        text-align: center;
-        margin-top: 5vh;
-        color: whitesmoke;
-        letter-spacing: 3px;
-        line-height: 3rem;
     }
 }
 
 .card {
-    margin-top: 30vh;
+    margin-top: 23rem;
 }

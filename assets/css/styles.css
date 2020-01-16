@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-banner__header {
   color: white;
-  font-size: 5.5rem;
+  font-size: 7.5rem;
   font-weight: 400;
   letter-spacing: 0.8rem;
 }
@@ -100,6 +100,22 @@ h1, h2, h3, h4, h5, h6 {
 .card__author-link:link, .card__author-link:visited, .card__author-link:active {
   font-weight: 700;
   color: #444444;
+}
+
+.main-blog__header {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 8vh;
+  color: #fff;
+  letter-spacing: 3px;
+}
+.main-blog__paragraph {
+  text-align: center;
+  margin-top: 5vh;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 3rem;
 }
 
 .main-footer__heading {
@@ -237,26 +253,14 @@ h1, h2, h3, h4, h5, h6 {
 .main-blog__graystrip {
   position: absolute;
   z-index: -1;
-  height: 42rem;
+  min-height: 36rem;
+  height: 55vh;
   width: 100%;
   background-color: #444444;
 }
-.main-blog__header {
-  text-align: center;
-  margin-top: 8vh;
-  color: whitesmoke;
-  letter-spacing: 3px;
-}
-.main-blog__paragraph {
-  text-align: center;
-  margin-top: 5vh;
-  color: whitesmoke;
-  letter-spacing: 3px;
-  line-height: 3rem;
-}
 
 .card {
-  margin-top: 30vh;
+  margin-top: 23rem;
 }
 
 .banner {
