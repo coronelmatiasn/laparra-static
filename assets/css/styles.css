@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-banner__header {
-  color: white;
+  color: #fff;
   font-size: 7.5rem;
   font-weight: 400;
   letter-spacing: 0.8rem;
@@ -116,6 +116,35 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   letter-spacing: 3px;
   line-height: 3rem;
+}
+.main-blog__button {
+  font-family: "Dosis", sans-serif;
+  display: block;
+  border: 2px solid #A52300;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #A52300;
+}
+
+.main-eventos__header {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.main-eventos__button {
+  font-family: "Dosis", sans-serif;
+  display: block;
+  border: 2px solid #A52300;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #A52300;
 }
 
 .main-footer__heading {
@@ -249,6 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-blog {
   position: relative;
+  margin-bottom: 18rem;
 }
 .main-blog__graystrip {
   position: absolute;
@@ -258,9 +288,42 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   background-color: #444444;
 }
+.main-blog__button {
+  max-width: 38rem;
+  margin: auto;
+}
+.main-blog__button:link, .main-blog__button:visited, .main-blog__button:active {
+  color: #a52300;
+  padding: 2rem 2rem;
+  transition: all 0.2s ease-out;
+}
+.main-blog__button:hover, .main-blog__button:focus {
+  color: #fff;
+  background-color: #a52300;
+}
 
 .card {
   margin-top: 23rem;
+}
+
+.main-eventos__img {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  width: 49.86%;
+  height: 80vh;
+}
+.main-eventos__button {
+  max-width: 38rem;
+  margin: auto;
+}
+.main-eventos__button:link, .main-eventos__button:visited, .main-eventos__button:active {
+  color: #a52300;
+  padding: 2rem 2rem;
+  transition: all 0.2s ease-out;
+}
+.main-eventos__button:hover, .main-eventos__button:focus {
+  color: #fff;
+  background-color: #a52300;
 }
 
 .banner {
