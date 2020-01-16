@@ -1,17 +1,31 @@
 .main-blog {
+
+    position: relative;
+
     &__graystrip {
         position: absolute;
         z-index: -1;
-        margin-top: 150rem;
-        height: 50rem;
-        background-color: gray;
+        height: 42rem;
+        width: 100%;
+        background-color: #444444;
     }
 
     &__header {
         text-align: center;
+        margin-top: 8vh;
+        color: whitesmoke;
+        letter-spacing: 3px;
     }
 
     &__paragraph {
         text-align: center;
+        margin-top: 5vh;
+        color: whitesmoke;
+        letter-spacing: 3px;
+        line-height: 3rem;
     }
+}
+
+.card {
+    margin-top: 30vh;
 }

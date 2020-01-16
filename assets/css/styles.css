@@ -231,6 +231,34 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.main-blog {
+  position: relative;
+}
+.main-blog__graystrip {
+  position: absolute;
+  z-index: -1;
+  height: 42rem;
+  width: 100%;
+  background-color: #444444;
+}
+.main-blog__header {
+  text-align: center;
+  margin-top: 8vh;
+  color: whitesmoke;
+  letter-spacing: 3px;
+}
+.main-blog__paragraph {
+  text-align: center;
+  margin-top: 5vh;
+  color: whitesmoke;
+  letter-spacing: 3px;
+  line-height: 3rem;
+}
+
+.card {
+  margin-top: 30vh;
+}
+
 .banner {
   height: 40vh;
   display: flex;
