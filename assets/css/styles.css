@@ -416,6 +416,33 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
 }
 
+.metabox {
+  color: #fff;
+  font-weight: 300;
+  font-family: "Dosis", sans-serif;
+  margin: 5rem 0;
+}
+.metabox__link {
+  background-color: #444444;
+  padding: 1rem 2rem;
+  box-shadow: 2px 5px 10px rgba(20, 20, 20, 0.5);
+}
+.metabox__link:link, .metabox__link:active, .metabox__link:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.metabox__link:hover, .metabox__link:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+.metabox__link i {
+  margin-right: 1.5rem;
+}
+.metabox__title {
+  background-color: #a52300;
+  padding: 1rem 2rem;
+  box-shadow: 2px 5px 10px rgba(20, 20, 20, 0.5);
+}
+
 .main-header {
   background-color: #a52300;
   padding-top: 1.5rem;

@@ -1,0 +1,34 @@
+.metabox {
+    color: $color-white;
+    font-weight: 300;
+    font-family: 'Dosis', sans-serif;
+    margin: 5rem 0;
+
+    &__link {
+        background-color: $color-grey-dark;
+        padding: 1rem 2rem;
+        box-shadow: 2px 5px 10px rgba(20, 20, 20, .5);
+
+        &:link,
+        &:active,
+        &:visited {
+            color: $color-white;
+            text-decoration: none;
+        }
+
+        &:hover,
+        &:focus {
+            color: rgba($color-white, .7);
+        }
+
+        i {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__title {        
+        background-color: $color-primary;
+        padding: 1rem 2rem;
+        box-shadow: 2px 5px 10px rgba(20, 20, 20, .5);
+    }
+}
