@@ -1,0 +1,57 @@
+.share-buttons {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 370px) {
+        justify-content: flex-start;
+    }
+
+    &__btn {
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+
+        @media (max-width: 370px) {
+            width: 3rem;
+            text-align: center;
+        }
+
+        &:link,
+        &:active,
+        &:visited {
+            color: $color-white;
+            text-decoration: none;
+        }
+
+        i {
+            margin-right: 1.5rem;
+
+            @media (max-width: 370px) {
+                margin-right: 0;
+                font-size: 3rem;
+            }
+        }
+        
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        &--whatsapp {
+            background-color: #23d265;
+        }
+
+        &--facebook {
+            background-color: #3c5a9b;
+        }
+
+        &--twitter {
+            background-color: #53aff2;
+        }
+    }
+
+    &__btn-text {
+        @media (max-width: 370px) {
+            display: none;
+        }
+    }
+}

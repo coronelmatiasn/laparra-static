@@ -4,6 +4,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: $default-font-size;
+    color: $color-grey-dark;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -104,4 +105,10 @@ h1, h2, h3, h4, h5, h6 {
             opacity: .7;
         }
     }
+}
+
+.article-header {
+    font-size: 3rem;
+    font-weight: 400;
+    color: $color-primary;
 }

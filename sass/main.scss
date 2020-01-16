@@ -14,7 +14,14 @@
 @import "components/pagination";
 @import "components/event-card";
 @import "components/square-button";
+@import "components/metabox";
+@import "components/featured-image";
+@import "components/article-info";
+@import "components/share-buttons";
 
-@import "layout/header";
-@import "layout/footer";
+@import "layout/main-header";
+@import "layout/main-footer";
 @import "layout/card-container";
+@import "layout/headers";
+
+@import "pages/single";

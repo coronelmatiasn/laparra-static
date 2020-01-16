@@ -1,0 +1,29 @@
+.article-info {
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-grey-dark;
+
+    &__author {
+
+    }
+
+    &__link {
+        &:link,
+        &:visited,
+        &:active {
+            color: $color-primary;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    &__date {
+
+    }
+}
