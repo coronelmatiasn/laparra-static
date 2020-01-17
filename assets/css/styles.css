@@ -149,13 +149,44 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-aboutus__us .us-container__header {
   font-size: 4rem;
+  letter-spacing: 2px;
+}
+.main-aboutus__us .us-paragraph {
+  font-size: 2rem;
+}
+.main-aboutus__us .us-button {
+  font-family: "Dosis", sans-serif;
+  border: 2px solid #A52300;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #A52300;
 }
 .main-aboutus__hours .hours__header {
   font-size: 4rem;
   letter-spacing: 2px;
 }
+.main-aboutus__hours .hours__paragraph {
+  font-size: 2rem;
+}
 .main-aboutus__hours .location__header {
   font-size: 4rem;
+  letter-spacing: 2px;
+}
+.main-aboutus__hours .location__paragraph {
+  font-size: 2rem;
+}
+.main-aboutus__hours .location__button {
+  font-family: "Dosis", sans-serif;
+  border: 2px solid #A52300;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #A52300;
 }
 
 .main-footer__heading {
@@ -342,12 +373,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main-aboutus__us {
   float: left;
-  padding: 12rem;
+  padding: 12rem 12rem 2rem;
   width: 55%;
 }
 .main-aboutus__hours {
   overflow: auto;
-  padding: 10rem;
+  padding: 10rem 2rem 2rem;
+}
+
+.us-paragraph {
+  margin-bottom: 7rem;
 }
 
 .us-container {
@@ -362,8 +397,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 3.5rem;
 }
 
+.us-button {
+  max-width: 80rem;
+  float: right;
+}
+.us-button:link, .us-button:visited, .us-button:active {
+  color: #a52300;
+  padding: 2rem 6rem;
+  transition: all 0.2s ease-out;
+}
+.us-button:hover, .us-button:focus {
+  color: #fff;
+  background-color: #a52300;
+}
+
 .hours {
-  margin-bottom: 6rem;
+  margin-bottom: 13rem;
 }
 .hours__header {
   margin-bottom: 2rem;
@@ -371,6 +420,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .location__header {
   margin-bottom: 2rem;
+}
+.location__phone {
+  margin-bottom: 9.4rem;
+}
+.location__button {
+  max-width: 80rem;
+  float: left;
+}
+.location__button:link, .location__button:visited, .location__button:active {
+  color: #a52300;
+  padding: 2rem 6rem;
+  transition: all 0.2s ease-out;
+}
+.location__button:hover, .location__button:focus {
+  color: #fff;
+  background-color: #a52300;
 }
 
 .banner {

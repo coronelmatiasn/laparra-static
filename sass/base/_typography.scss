@@ -136,7 +136,23 @@ h1, h2, h3, h4, h5, h6 {
        .us-container {
            &__header {
                font-size: 4rem;
+               letter-spacing: 2px;
            }
+       }
+
+       .us-paragraph {
+           font-size: 2rem;
+       }
+
+       .us-button {
+            font-family: 'Dosis', sans-serif;
+            border: 2px solid #A52300;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 500;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: #A52300;
        }
    }
    
@@ -146,11 +162,31 @@ h1, h2, h3, h4, h5, h6 {
                 font-size: 4rem;
                 letter-spacing: 2px;
             }
+
+            &__paragraph {
+                font-size: 2rem;
+            }
        }
 
        .location {
             &__header {
                 font-size: 4rem;
+                letter-spacing: 2px;
+            }
+
+            &__paragraph {
+                font-size: 2rem;
+            }
+
+            &__button {
+                font-family: 'Dosis', sans-serif;
+                border: 2px solid #A52300;
+                text-decoration: none;
+                text-align: center;
+                font-weight: 500;
+                font-size: 2rem;
+                letter-spacing: 2px;
+                color: #A52300;
             }
        }
    }
