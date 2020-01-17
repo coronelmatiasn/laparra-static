@@ -326,6 +326,16 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #a52300;
 }
 
+.main-aboutus {
+  margin-top: 20rem;
+}
+.aboutus-logo {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  max-width: 10rem;
+  vertical-align: middle;
+}
+
 .banner {
   height: 40vh;
   display: flex;
