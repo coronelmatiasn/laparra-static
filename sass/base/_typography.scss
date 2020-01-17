@@ -130,6 +130,32 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.main-aboutus {
+   
+   &__us {
+       .us-container {
+           &__header {
+               font-size: 4rem;
+           }
+       }
+   }
+   
+    &__hours {
+       .hours {
+            &__header {
+                font-size: 4rem;
+                letter-spacing: 2px;
+            }
+       }
+
+       .location {
+            &__header {
+                font-size: 4rem;
+            }
+       }
+   }
+}
+
 .main-footer {
     &__heading {
         color: $color-white;

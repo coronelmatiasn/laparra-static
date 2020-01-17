@@ -147,6 +147,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #A52300;
 }
 
+.main-aboutus__us .us-container__header {
+  font-size: 4rem;
+}
+.main-aboutus__hours .hours__header {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+.main-aboutus__hours .location__header {
+  font-size: 4rem;
+}
+
 .main-footer__heading {
   color: #fff;
   font-weight: 700;
@@ -327,13 +338,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-aboutus {
-  margin-top: 20rem;
+  margin-top: 14rem;
 }
-.aboutus-logo {
+.main-aboutus__us {
+  float: left;
+  padding: 12rem;
+  width: 55%;
+}
+.main-aboutus__hours {
+  overflow: auto;
+  padding: 10rem;
+}
+
+.us-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.us-container__logo {
   -webkit-filter: invert(100%);
   filter: invert(100%);
   max-width: 10rem;
-  vertical-align: middle;
+  margin-right: 3.5rem;
+}
+
+.hours {
+  margin-bottom: 6rem;
+}
+.hours__header {
+  margin-bottom: 2rem;
+}
+
+.location__header {
+  margin-bottom: 2rem;
 }
 
 .banner {

@@ -1,12 +1,40 @@
-.main-aboutus{
-    margin-top: 20rem;
+.main-aboutus {
+    margin-top: 14rem;
+    
     &__us {
+        float: left;
+        padding: 12rem;
+        width: 55%;
+    }
 
+    &__hours {
+        overflow: auto;
+        padding: 10rem;
     }
 }
 
-.aboutus-logo {
-    -webkit-filter: invert(100%);filter: invert(100%);
-    max-width: 10rem;
-    vertical-align: middle;
+.us-container {
+    display: flex;
+    align-items:center;
+    margin-bottom: 6rem;
+
+    &__logo {
+        -webkit-filter: invert(100%);filter: invert(100%);
+        max-width: 10rem;
+        margin-right: 3.5rem;
+    }
+}
+
+.hours {
+    margin-bottom: 6rem;
+
+    &__header {
+        margin-bottom: 2rem;
+    }    
+}
+
+.location {
+    &__header {
+        margin-bottom: 2rem;
+    }
 }
