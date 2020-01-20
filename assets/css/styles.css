@@ -62,8 +62,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-banner__header {
-  color: white;
-  font-size: 5.5rem;
+  color: #fff;
+  font-size: 7.5rem;
   font-weight: 400;
   letter-spacing: 0.8rem;
 }
@@ -100,6 +100,93 @@ h1, h2, h3, h4, h5, h6 {
 .card__author-link:link, .card__author-link:visited, .card__author-link:active {
   font-weight: 700;
   color: #444444;
+}
+
+.main-blog__header {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 8vh;
+  color: #fff;
+  letter-spacing: 3px;
+}
+.main-blog__paragraph {
+  text-align: center;
+  margin-top: 5vh;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 3rem;
+}
+.main-blog__button {
+  font-family: "Dosis", sans-serif;
+  display: block;
+  border: 2px solid #A52300;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #A52300;
+}
+
+.main-eventos__header {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.main-eventos__button {
+  font-family: "Dosis", sans-serif;
+  display: block;
+  border: 2px solid #A52300;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #A52300;
+}
+
+.main-aboutus__us .us-container__header {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+.main-aboutus__us .us-paragraph {
+  font-size: 1.4rem;
+}
+.main-aboutus__us .us-button {
+  font-family: "Dosis", sans-serif;
+  border: 2px solid #A52300;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #A52300;
+}
+.main-aboutus__hours .hours__header {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+.main-aboutus__hours .hours__paragraph {
+  font-size: 2rem;
+}
+.main-aboutus__hours .location__header {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+.main-aboutus__hours .location__paragraph {
+  font-size: 2rem;
+}
+.main-aboutus__hours .location__button {
+  font-family: "Dosis", sans-serif;
+  border: 2px solid #A52300;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #A52300;
 }
 
 .main-footer__heading {
@@ -231,18 +318,138 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.main-blog {
+  position: relative;
+  margin-bottom: 18rem;
+}
 .main-blog__graystrip {
   position: absolute;
   z-index: -1;
-  margin-top: 150rem;
-  height: 50rem;
-  background-color: gray;
+  min-height: 36rem;
+  height: 55vh;
+  width: 100%;
+  background-color: #444444;
 }
-.main-blog__header {
-  text-align: center;
+.main-blog__button {
+  max-width: 38rem;
+  margin: auto;
 }
-.main-blog__paragraph {
-  text-align: center;
+.main-blog__button:link, .main-blog__button:visited, .main-blog__button:active {
+  color: #a52300;
+  padding: 2rem 2rem;
+  transition: all 0.2s ease-out;
+}
+.main-blog__button:hover, .main-blog__button:focus {
+  color: #fff;
+  background-color: #a52300;
+}
+.main-blog .card {
+  margin-top: 23rem;
+}
+
+.main-eventos__container {
+  display: flex;
+}
+@media (max-width: 800px) {
+  .main-eventos__container {
+    flex-direction: column;
+  }
+}
+.main-eventos__img {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  height: 80vh;
+  object-fit: cover;
+  width: 50%;
+}
+@media (max-width: 800px) {
+  .main-eventos__img {
+    width: 100%;
+    margin: 0;
+  }
+}
+.main-eventos__button {
+  max-width: 38rem;
+  margin: auto;
+}
+.main-eventos__button:link, .main-eventos__button:visited, .main-eventos__button:active {
+  color: #a52300;
+  padding: 2rem 2rem;
+  transition: all 0.2s ease-out;
+}
+.main-eventos__button:hover, .main-eventos__button:focus {
+  color: #fff;
+  background-color: #a52300;
+}
+
+.main-aboutus {
+  margin-top: 14rem;
+}
+.main-aboutus__us {
+  float: left;
+  padding: 12rem 12rem 2rem;
+  width: 55%;
+}
+.main-aboutus__hours {
+  overflow: auto;
+  padding: 10rem 2rem 2rem;
+}
+
+.us-paragraph {
+  margin-bottom: 7rem;
+}
+
+.us-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.us-container__logo {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  max-width: 10rem;
+  margin-right: 3.5rem;
+}
+
+.us-button {
+  max-width: 80rem;
+  float: right;
+}
+.us-button:link, .us-button:visited, .us-button:active {
+  color: #a52300;
+  padding: 2rem 6rem;
+  transition: all 0.2s ease-out;
+}
+.us-button:hover, .us-button:focus {
+  color: #fff;
+  background-color: #a52300;
+}
+
+.hours {
+  margin-bottom: 13rem;
+}
+.hours__header {
+  margin-bottom: 2rem;
+}
+
+.location__header {
+  margin-bottom: 2rem;
+}
+.location__phone {
+  margin-bottom: 9.4rem;
+}
+.location__button {
+  max-width: 80rem;
+  float: left;
+}
+.location__button:link, .location__button:visited, .location__button:active {
+  color: #a52300;
+  padding: 2rem 6rem;
+  transition: all 0.2s ease-out;
+}
+.location__button:hover, .location__button:focus {
+  color: #fff;
+  background-color: #a52300;
 }
 
 .banner {

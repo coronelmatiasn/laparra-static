@@ -24,8 +24,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-banner {
     &__header {
-        color: white;
-        font-size: 5.5rem;
+        color: $color-white;
+        font-size: 7.5rem;
         font-weight: 400;
         letter-spacing: .8rem;
     }
@@ -75,6 +75,121 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: 700;
         color: $color-grey-dark;
     }
+}
+
+.main-blog {
+    
+    &__header {
+        font-size: 4rem;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 8vh;
+        color: $color-white;
+        letter-spacing: 3px;
+    }
+
+    &__paragraph {
+        text-align: center;
+        margin-top: 5vh;
+        color: $color-white;
+        letter-spacing: 3px;
+        line-height: 3rem;
+    }
+
+    &__button {
+        font-family: 'Dosis', sans-serif;
+        display: block;
+        border: 2px solid #A52300;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        color: #A52300;
+    }
+}
+
+.main-eventos {
+    &__header {
+       text-align: center;
+       font-size: 3.5rem;
+       font-weight: 500;
+       letter-spacing: 1px; 
+    }
+
+    &__button {
+        font-family: 'Dosis', sans-serif;
+        display: block;
+        border: 2px solid #A52300;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        color: #A52300;
+    }
+}
+
+.main-aboutus {
+   
+   &__us {
+       .us-container {
+           &__header {
+               font-size: 4rem;
+               letter-spacing: 2px;
+           }
+       }
+
+       .us-paragraph {
+           font-size: $default-font-size;
+       }
+
+       .us-button {
+            font-family: 'Dosis', sans-serif;
+            border: 2px solid #A52300;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 500;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: #A52300;
+       }
+   }
+   
+    &__hours {
+       .hours {
+            &__header {
+                font-size: 4rem;
+                letter-spacing: 2px;
+            }
+
+            &__paragraph {
+                font-size: 2rem;
+            }
+       }
+
+       .location {
+            &__header {
+                font-size: 4rem;
+                letter-spacing: 2px;
+            }
+
+            &__paragraph {
+                font-size: 2rem;
+            }
+
+            &__button {
+                font-family: 'Dosis', sans-serif;
+                border: 2px solid #A52300;
+                text-decoration: none;
+                text-align: center;
+                font-weight: 500;
+                font-size: 2rem;
+                letter-spacing: 2px;
+                color: #A52300;
+            }
+       }
+   }
 }
 
 .main-footer {
