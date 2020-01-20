@@ -1,0 +1,36 @@
+.main-blog {
+    position: relative;
+    margin-bottom: 18rem;
+    
+    &__graystrip {
+        position: absolute;
+        z-index: -1;
+        min-height: 36rem;
+        height: 55vh;
+        width: 100%;
+        background-color: #444444;
+    }
+    
+    &__button {
+        max-width: 38rem;
+        margin: auto;
+        &:link,
+        &:visited,
+        &:active {
+            color: $color-primary;
+            padding: 2rem 2rem;
+            transition: all .2s ease-out;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+            background-color: $color-primary;
+        }
+    }
+
+    .card {
+        margin-top: 23rem;
+    }
+}
+
