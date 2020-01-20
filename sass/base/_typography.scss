@@ -227,3 +227,21 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     color: $color-primary;
 }
+
+.event-header {
+    &__date {
+        color: $color-white;
+        font-family: 'Dosis', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.event {
+    &__date {
+        color: $color-white;
+        font-family: 'Dosis', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
