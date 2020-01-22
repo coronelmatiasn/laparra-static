@@ -1,16 +1,36 @@
 .main-aboutus {
-    margin-top: 12rem;
-    margin-bottom: 10rem;
-    
+    padding-top: 12rem;
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 770px) {
+        flex-direction: column;
+    }
+
     &__us {
-        float: left;
-        padding: 12rem 12rem 2rem;
+        padding: 0 2rem;
         width: 55%;
+        display: flex;
+        flex-direction: column;
+        
+        @media (max-width: 770px) {
+            margin-bottom: 7rem;
+        }
     }
 
     &__hours {
-        overflow: auto;
-        padding: 10rem 2rem 2rem;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__us,
+    &__hours {
+        @media (max-width: 770px) {
+            width: 100%;
+        }
     }
 }
 
@@ -32,13 +52,19 @@
 
 .us-button {
     max-width: 80rem;
-    float: right;
+    align-self: flex-end;
+
     &:link,
     &:visited,
     &:active {
         color: $color-primary;
         padding: 2rem 6rem;
         transition: all .2s ease-out;
+
+        @media (max-width: 770px) {
+            padding: 2rem 0;
+            width: 100%;
+        }
     }
     &:hover,
     &:focus {
@@ -48,25 +74,33 @@
 }
 
 .hours {
-    margin-bottom: 13rem;
-
+    display: flex;
+    flex-direction: column;
+    
     &__header {
         margin-bottom: 2rem;
     }    
+
+    &__paragraph {
+        margin-bottom: 2rem;
+    }
 }
 
 .location {
+    display: flex;
+    flex-direction: column;
+
     &__header {
         margin-bottom: 2rem;
     }
 
     &__phone {
-        margin-bottom: 9.4rem;
+        margin-bottom: 5rem;
     }
 
     &__button {
         max-width: 80rem;
-        float: left;
+
         &:link,
         &:visited,
         &:active {
@@ -79,5 +113,12 @@
             color: $color-white;
             background-color: $color-primary;
         }
+    }
+}
+
+.hours,
+.location {
+    @media (max-width: 770px) {
+        margin-bottom: 6rem;
     }
 }
