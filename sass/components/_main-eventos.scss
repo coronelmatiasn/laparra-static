@@ -3,8 +3,7 @@
     &__img {
         margin-top: 5rem;
         margin-bottom: 7rem;
-        width: 49.86%;
-        height: 80vh;
+        width: 50vw;
     }
 
     &__button {
@@ -23,5 +22,9 @@
             color: $color-white;
             background-color: $color-primary;
         }
+    }
+
+    &__container {
+        display: flex;
     }
 }
