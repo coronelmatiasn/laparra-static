@@ -129,13 +129,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #A52300;
 }
 
-.main-eventos__header {
+.main-events__header {
   text-align: center;
   font-size: 3.5rem;
   font-weight: 500;
   letter-spacing: 1px;
 }
-.main-eventos__button {
+.main-events__button {
   font-family: "Dosis", sans-serif;
   display: block;
   border: 2px solid #A52300;
@@ -348,25 +348,25 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 23rem;
 }
 
-.main-eventos__img {
+.main-events__img {
   margin-top: 5rem;
   margin-bottom: 7rem;
   width: 50vw;
 }
-.main-eventos__button {
+.main-events__button {
   max-width: 38rem;
   margin: auto;
 }
-.main-eventos__button:link, .main-eventos__button:visited, .main-eventos__button:active {
+.main-events__button:link, .main-events__button:visited, .main-events__button:active {
   color: #a52300;
   padding: 2rem 2rem;
   transition: all 0.2s ease-out;
 }
-.main-eventos__button:hover, .main-eventos__button:focus {
+.main-events__button:hover, .main-events__button:focus {
   color: #fff;
   background-color: #a52300;
 }
-.main-eventos__container {
+.main-events__container {
   display: flex;
 }
 
