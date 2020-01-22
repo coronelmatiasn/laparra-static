@@ -140,13 +140,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #A52300;
 }
 
-.main-eventos__header {
+.main-events__header {
   text-align: center;
   font-size: 3.5rem;
   font-weight: 500;
   letter-spacing: 1px;
 }
-.main-eventos__button {
+.main-events__button {
   font-family: "Dosis", sans-serif;
   display: block;
   border: 2px solid #A52300;
@@ -156,6 +156,26 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
   letter-spacing: 2px;
   color: #A52300;
+}
+.main-events .event-date__header, .main-events .event-date__header2 {
+  font-family: "Dosis", sans-serif;
+  background-color: #A52300;
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 2rem 2rem;
+  z-index: 1;
+}
+.main-events .event-date__paragraph, .main-events .event-date__paragraph2 {
+  font-family: "Dosis", sans-serif;
+  background-color: #444444;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #fff;
+  padding: 1rem;
+  z-index: 0.9;
 }
 
 .main-aboutus__us .us-container__header {
@@ -378,43 +398,109 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 23rem;
 }
 
-.main-eventos__container {
-  display: flex;
-}
-@media (max-width: 800px) {
-  .main-eventos__container {
-    flex-direction: column;
+@keyframes events-images {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
   }
 }
-.main-eventos__img {
+.main-events__img {
   margin-top: 5rem;
   margin-bottom: 7rem;
-  height: 80vh;
-  object-fit: cover;
-  width: 50%;
+  width: 50vw;
 }
-@media (max-width: 800px) {
-  .main-eventos__img {
-    width: 100%;
-    margin: 0;
+.main-events__img:hover {
+  animation-name: events-images;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes event-date-header {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    bottom: 5rem;
+  }
+  50% {
+    opacity: 0.5;
+    botom: 10rem;
+  }
+  100% {
+    opacity: 1;
+    botom: 15rem;
   }
 }
-.main-eventos__button {
+@keyframes event-date-paragraph {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    bottom: 2rem;
+  }
+  50% {
+    opacity: 0.5;
+    botom: 7rem;
+  }
+  100% {
+    opacity: 1;
+    botom: 12rem;
+  }
+}
+.main-events__img:hover .event-date__header, .main-events__img:hover .event-date__header2 {
+  animation-name: event-date-header;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.main-events__img:hover .event-date__paragraph, .main-events__img:hover .event-date__paragraph2 {
+  animation-name: event-date-paragraph;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.main-events__button {
   max-width: 38rem;
   margin: auto;
 }
-.main-eventos__button:link, .main-eventos__button:visited, .main-eventos__button:active {
+.main-events__button:link, .main-events__button:visited, .main-events__button:active {
   color: #a52300;
   padding: 2rem 2rem;
   transition: all 0.2s ease-out;
 }
-.main-eventos__button:hover, .main-eventos__button:focus {
+.main-events__button:hover, .main-events__button:focus {
   color: #fff;
   background-color: #a52300;
 }
+.main-events__container {
+  display: flex;
+  position: relative;
+}
+.main-events .event-date__header {
+  position: absolute;
+  bottom: 15rem;
+  left: 5rem;
+  visibility: visible;
+}
+.main-events .event-date__paragraph {
+  position: absolute;
+  bottom: 12rem;
+  left: 7rem;
+  visibility: visible;
+}
+.main-events .event-date__header2 {
+  position: absolute;
+  bottom: 15rem;
+  right: 51rem;
+  visibility: visible;
+}
+.main-events .event-date__paragraph2 {
+  position: absolute;
+  bottom: 12rem;
+  right: 62rem;
+  visibility: visible;
+}
 
 .main-aboutus {
-  margin-top: 14rem;
+  margin-top: 12rem;
+  margin-bottom: 10rem;
 }
 .main-aboutus__us {
   float: left;

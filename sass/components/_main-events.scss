@@ -1,0 +1,100 @@
+.main-events {
+    
+    @keyframes events-images {
+        from{opacity: 1;}
+        to{opacity: 0.8;}
+    }
+
+    &__img {
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+        width: 50vw;
+    }
+
+    &__img:hover {
+        animation-name: events-images;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+
+        .event-date {
+            @keyframes event-date-header {
+                0%{visibility: visible; opacity: 0; bottom: 5rem;}
+                50%{opacity: 0.5; botom: 10rem;}
+                100%{opacity: 1; botom: 15rem;}
+            }
+
+            @keyframes event-date-paragraph {
+                0%{visibility: visible; opacity: 0; bottom: 2rem;}
+                50%{opacity: 0.5; botom: 7rem;}
+                100%{opacity: 1; botom: 12rem;}
+            }
+
+            &__header, &__header2{
+                animation-name: event-date-header;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+
+            &__paragraph, &__paragraph2 {
+                animation-name: event-date-paragraph;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+
+    &__button {
+        max-width: 38rem;
+        margin: auto;
+        &:link,
+        &:visited,
+        &:active {
+            color: $color-primary;
+            padding: 2rem 2rem;
+            transition: all .2s ease-out;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+            background-color: $color-primary;
+        }
+    }
+
+    &__container {
+        display: flex;
+        position: relative;
+    }
+
+    .event-date {
+
+        &__header {
+            position: absolute;
+            bottom: 15rem;
+            left: 5rem;
+            visibility: visible;
+        }
+
+        &__paragraph {
+            position: absolute;
+            bottom: 12rem;
+            left: 7rem;
+            visibility: visible;
+        }
+
+        &__header2 {
+            position: absolute;
+            bottom: 15rem;
+            right: 51rem;
+            visibility: visible;
+        }
+
+        &__paragraph2 {
+            position: absolute;
+            bottom: 12rem;
+            right: 62rem;
+            visibility: visible;
+        }
+
+    }
+}
