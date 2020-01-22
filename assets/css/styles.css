@@ -390,8 +390,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   background-color: #a52300;
 }
+.main-blog .cards-container {
+  margin-bottom: 23rem;
+}
 .main-blog .card {
-  margin-top: 23rem;
+  transform: translateY(23rem);
 }
 
 @keyframes events-images {

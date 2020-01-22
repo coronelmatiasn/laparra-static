@@ -29,8 +29,12 @@
         }
     }
 
+    .cards-container {
+        margin-bottom: 23rem;
+    }
+
     .card {
-        margin-top: 23rem;
+        transform: translateY(23rem);
     }
 }
 
